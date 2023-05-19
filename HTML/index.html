@@ -8,21 +8,15 @@
     <div class="main-div">
       <p class="title">Rock Paper Scissors</p>
 
-        <button class="move-button" onclick="
-          playGame('rock');
-        ">
+        <button class="move-button js-rock-button">
           <img class="move-icon" src="/RPS/IMAGES/rock-emoji.png">
         </button>
 
-        <button class="move-button" onclick="
-          playGame('paper');
-        ">
+        <button class="move-button js-paper-button">
           <img class="move-icon" src="/RPS/IMAGES/paper-emoji.png">
         </button>
 
-        <button class="move-button" onclick="
-          playGame('scissors');
-        ">
+        <button class="move-button js-scissors-button">
           <img class="move-icon" src="/RPS/IMAGES/scissors-emoji.png">
         </button>
 
@@ -30,17 +24,9 @@
         <p class="js-moves"></p>
         <p class="js-score score"></p>
 
-        <button  class="reset-score-button" onclick="
-          score.wins = 0;
-          score.losses = 0;
-          score.ties = 0;
-          localStorage.removeItem('score');
-          updateScoreElement();
-        ">Reset Score</button>
+        <button  class="reset-score-button js-reset-score-button">Reset Score</button>
 
-        <button class="auto-play-button" onclick="
-          autoPlay();
-        ">
+        <button class="auto-play-button js-auto-play-button">
           Auto Play
         </button>
     </div>
