@@ -19,9 +19,13 @@ function autoPlay() {
       playGame(playerMove);
     }, 1000);
     isAutoPlaying = true;
+    document.querySelector('.auto-play-button')
+      .innerHTML = 'Stop Playing';
   } else {
     clearInterval(intervalID);
     isAutoPlaying = false;
+    document.querySelector('.auto-play-button')
+      .innerHTML = 'Auto Play';
   }
 }
 
